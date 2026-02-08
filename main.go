@@ -6,16 +6,16 @@ import "fmt"
 
 func main() {
 
-	inputCur := userInput()
-
-	fmt.Println(calculateCur(inputCur))
+	fmt.Println(calculateCur(userInput()))
 
 }
 
-func userInput() float64 {
+func userInput() (float64, string, string) {
 	var inputCur float64
-	fmt.Scan(&inputCur)
-	return inputCur
+	var startCur string
+	var endCur string
+	fmt.Scan(&inputCur, &startCur, &endCur)
+	return inputCur, startCur, endCur
 }
 
 func calculateCur(inputCur float64, startCur string, endCur string) float64 {
