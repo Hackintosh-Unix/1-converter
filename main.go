@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+// Домашнее задание 1
+
 func main() {
 
 	var eur float64 = 1
