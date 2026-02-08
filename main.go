@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// Домашнее задание 1
+// Домашнее задание 1-start
 
 func main() {
 
