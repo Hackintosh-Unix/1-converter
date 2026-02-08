@@ -6,9 +6,21 @@ import "fmt"
 
 func main() {
 
+	inputCur := userInput()
+
+	fmt.Println(calculateCur(inputCur))
+
+}
+
+func userInput() float64 {
+	var inputCur float64
+	fmt.Scan(&inputCur)
+	return inputCur
+}
+
+func calculateCur(inputCur float64, startCur string, endCur string) float64 {
 	const usdToEur float64 = 0.84
 	const usdToRub float64 = 77.05
-	const eurToRub float64 = 1.0 * usdToRub / usdToEur
-	fmt.Println(eurToRub)
-
+	var eurToRub float64 = inputCur * usdToRub / usdToEur
+	return eurToRub
 }
